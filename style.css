@@ -1,0 +1,506 @@
+*{
+    margin: 0;
+    padding: 0;
+
+}
+.my_logo{
+    width: 70px;
+    height: 70px;
+}
+.header{
+    min-height: 80vh;
+    width: 100%;
+    background-image: /*linear-gradient(rgba(75, 86, 129, 0.7),rgba(1, 6, 26, 0.7)), */url(./image/Main_background.jpg);
+    background-position: center;
+    background-size: cover; 
+    position: relative;
+}
+.nav-links{
+    flex: 1;
+    text-align: right;
+    padding-right: 100px;
+    
+}
+nav{
+    display: flex;
+    padding: 1% 5%;
+    justify-content: space-between;
+    align-items: center;
+}
+nav img{
+    width: 150px;
+}
+.nav-links ul li{
+    list-style: none;
+    display: inline-block;
+    padding: 8px 25px;
+    position: relative;
+}
+.nav-links ul li a{
+    color: #fff;
+    text-decoration: none;
+    font-size: 18px;
+    font-family: 'Glory', sans-serif;
+}
+.nav-links ul li::after{
+    content: '';
+    width: 0%;
+    height: 2px;
+    background: #ff0000;
+    display: block;
+    margin: auto;
+    transition: 0.5s;
+}
+.nav-links ul li:hover::after{
+    width: 100%;
+     
+}
+.text-box h1{
+    font-family: 'Glory';
+    font-size: 62px;
+    color: #fff;
+     
+}
+.text-box p{
+    font-family: 'Glory';
+    margin: 10px 0 40px;
+    font-size: 16px;
+    color: #fff;     
+}
+.text-box a{
+    font-family: 'Glory', sans-serif;
+    font-size: 20px;
+    color: #fff; 
+}
+.text-box{
+    width: 90%;
+    color: #fff;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    text-align: left;
+}
+.hero-btn{
+    display: inline-block;
+    width: 150px;
+    height: 20px;
+    text-decoration: none;
+    border: 1px solid;
+    padding: 12px 34px;
+    font-size: 13px;
+    background: transparent;
+    position: relative;
+    cursor: pointer;   
+    border-radius: 25px;
+    background-color: #ff2600;
+    text-align:  center;
+}
+
+nav .fa{
+    display: none;
+}
+@media(max-width: 700px){
+    .text-box h1{
+        font-size: 20px;
+    }
+    .nav-links ul li{
+        display: block;
+    }
+    .nav-links{
+           position: absolute;
+           background: #f44336;
+           height: 100vh;
+           width: 200px;
+           top: 0;
+           right: -200px;
+           text-align: left;
+           z-index: 2;
+           transition: 1s;
+    }
+    nav .fa{
+      display: block;
+      color: #fff;
+      margin: 10px;
+      font-size: 22px;
+      cursor: pointer; 
+    }
+    .nav-links ul{
+        padding: 30px;
+    }
+    .row{
+        align-items: center;
+        margin: 0px;
+        text-align: center;
+
+    }
+}
+/*------- course --------*/
+.course{
+    max-width: 100%;
+    min-height: 90vh;
+    margin: auto;
+    text-align: center;
+    padding-top: 100px;
+    background-image: url(./image/2NG-BG.JPG); 
+    background-color: beige;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;  
+}
+.course p{
+    font-family: 'Glory', sans-serif;
+}
+.course-col h2{
+    color: red;
+    font-family: 'Glory', sans-serif;
+}
+.course-col h4{
+    color: red;
+    font-family: 'Glory', sans-serif;
+}
+.course:hover{
+    box-shadow: rgb(148, 161, 177);
+}
+.cls-h1{
+    font-size: 40px;
+    font-weight: 600;
+    width: 100%;
+    padding-top: 100px;
+    box-sizing: border-box;
+    font-family: 'Glory', sans-serif;
+    color: red;
+
+}
+
+.row{
+    
+    display: flex;
+    justify-content: space-between;
+
+}
+.course-col{
+    flex-basis: 30%;
+    border-radius: 50%;
+    margin-bottom: 20px;
+    padding: 30px 100px;
+}
+.course-img{
+    width: 170px;
+    height: 170px;
+    border-radius: 50%;
+}
+h3{
+    text-align: center;
+    font-weight: 600;
+    margin: 10px 0px;
+}
+@media(max-width: 700px){
+    .row{
+        flex-direction: column;
+    }
+}
+/*------------------- campus   -------------*/
+
+.campus{
+    width: 100%;
+    min-height: 80vh;
+    margin: auto;
+    text-align: center;
+    padding-top: 50px;
+    font-family: 'Glory', sans-serif;
+}
+.my_hero_button{
+    display: inline-block;
+    width: 150px;
+    font-family: 'Glory' sans-serif;
+    height: 20px;
+    text-decoration: none;
+    border: 1px solid;
+    padding: 12px 34px;
+    font-size: 20px;
+    background: transparent;
+    position: relative;
+    cursor: pointer;   
+    border-radius: 25px;
+    background-color: #ffffff;
+    text-align:  center;
+    align-items: left;
+    color: rgb(243, 4, 4);
+}
+.campus-col{
+    flex-basis: 32%;
+    border-radius: 20px;
+    margin-bottom: 30px;
+    position: relative;
+    overflow: hidden;
+    text-align: left;
+}
+.campus-col img{
+    width: 60%;
+    border-radius: 50%;
+    margin-top: 50px;
+
+}
+.campus-col h1{
+    font-size: 50px;
+    color: white;
+    text-align: left;
+}
+.campus-col p{
+    font-size: 20px;
+    color: white;
+    margin: auto;
+    text-align: left;
+}
+.layer{
+    background: transparent;
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    transition: 0.5s;
+}
+
+.layer h3{
+    width: 100%;
+    font-weight: 500;
+}
+/*-----------------FACILITES-------------*/
+
+.my_fac_iamge{
+    background-image: url(./image/BG4.JPG); 
+    background-repeat: no-repeat;
+    background-size: cover;
+    min-height: 80vh;
+    max-width: 100%;
+    text-align: center;
+    color: red;
+    background-size: cover;
+    background-position: center center;
+    padding-top: 180px;
+    font-family: 'Glory';
+}
+.burger-h1{
+        font-size: 50px;
+        color: rgb(255, 5, 5);
+        text-align: left;
+        font-family: 'Glory';
+}
+.facilities{
+    width: 80%;
+    margin: auto;
+    text-align: center;
+    padding-top: 50px;  
+    font-family: 'Glory' sans-serif;
+    font-family: 'Glory'; 
+    
+}
+.pop-pack{
+    /*background-image: url(./image/BG4.JPG); */
+    background-color: wheat;
+    text-align: center;
+    color: red;
+    font-family: 'Glory';
+    padding: 200px;
+    
+    
+    
+}
+
+
+.facilities p{
+    width: 80%;
+    margin: auto;
+    text-align: center;
+    padding-top: 50px;  
+    font-family: 'Glory'; 
+    color: white;
+    font-size: 35px;
+    line-height: 30px;
+    font-weight: 100;
+}
+.circle{
+    width: 250px;
+    height: 250px;
+    margin: 10% auto;
+    background: rgb(250, 61, 61);
+    border: 5px solid white;
+    border-radius: 50%;
+    position: relative;
+    font-family: 'Glory' sans-serif;
+    font-family: 'Glory';
+
+}
+.content-circle{
+    position: relative;
+    width: inherit;
+    height: auto;
+    top: 50%;
+    transform: translateY(-50%);
+    font-family: 'Glory' sans-serif;
+}
+
+.facilities h1{
+    font-size: 60px;
+}
+
+.sixth-div{
+
+      margin-top: 100px;
+      flex-basis: 25%;
+      border-radius: 10px;
+      background-color:white;
+      margin-bottom: 20px;
+
+}
+.img-width-logo{
+    width: 45%;
+    height: 60%;
+}
+
+.stat-h1{
+    text-align: center;
+}
+.circle_data{
+    text-align: center;
+
+}
+
+.facilities-col{
+    margin-top: 20px;
+     flex-basis: 31%;
+     border-radius: 10px;
+     margin-bottom: 50%;
+     background-color:white;
+}
+.facilities-col img{
+    width: 30%;
+    border-radius: 10px;
+}
+.facilities-col h3{
+    margin-top: 16px;
+    margin-bottom: 15px;
+    text-align: left;
+}
+.my_hero_button2{
+    display: inline-block;
+    width: 150px;
+    height: 20px;
+    text-decoration: none;
+    border: 1px solid;
+    padding: 12px 34px;
+    font-size: 20px;
+    background: transparent;
+    position: relative;
+    cursor: pointer;   
+    border-radius: 25px;
+    background-color: #ff0000;
+    text-align:  center;
+    align-items: left;
+    color: rgb(255, 255, 255);
+    font-family: 'Glory';
+    
+}
+.big-burg-div{
+    width: 100%;
+    padding-left: 100px;
+    
+}
+/*-----------------testimonials-----------*/
+.testimonials{
+    width: 49.3%;
+    margin: inherit;
+    padding: 400px;
+    height: auto;
+    background-repeat: no-repeat;
+    background-size: cover;
+    text-align: center;
+    background-image: linear-gradient(rgba(253, 74, 74, 0.7),rgba(250, 69, 69, 0.7)), url(./image/pic8.jpg);
+    font-family: 'Glory' sans-serif;
+    font-family: 'Glory';
+}
+.test-text{
+    color: white;
+    width: 70%;
+    padding-left: 150px;
+}
+.test-text h3{
+    font-size: 30px;
+}
+.test-text p{
+    padding-top: 35px;
+    font-size: 50px;
+}
+
+.testimonials-col{
+    flex-basis: 45%;
+    border-radius: 10px;
+    margin-bottom: 4%;
+    text-align: left;
+    background: rgba(235, 192, 206, 0.281);
+    padding: 30px;
+    cursor: pointer;
+    display: flex;
+}
+.hero-btn-order{
+    display: inline-block;
+    width: 150px;
+    height: 17px;
+    text-decoration: none;
+    border: 1px solid;
+    padding: 10px 25px 20px;
+    font-size: 22px;
+    background: transparent;
+    position: relative;
+    cursor: pointer;   
+    border-radius: 30px;
+    background-color: #f16565;
+    text-align:  center;
+    font-family: 'Glory' sans-serif;
+    font-family: 'Glory';
+    color: white;
+}
+.facilities-pcolor{
+    color: red;
+}
+.input-settting{
+    height: 50px;
+    size: 50px;
+    border-radius: 10px 0px;
+}
+
+
+
+@media(max-width: 700px){
+    .testimonials-col img{
+        margin-left: 0px;
+        margin-right: 15px;
+    }   
+}
+/*-------- call to action------*/
+
+.footer-back{
+    background-color: black;
+    min-height: 80vh;
+    font-family: 'Glory';
+    padding-top: 150px;
+}
+
+.footer-align{
+    text-align: center;
+    padding: 100px;
+    color: white;
+    text-align: left;
+    
+    
+}
+.footer-content{
+    color: white;
+    padding: 100px;
+    width: 40%;
+}
+.footer-content p{
+    font-weight: normal;
+}
